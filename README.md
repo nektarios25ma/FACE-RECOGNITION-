@@ -1,29 +1,33 @@
 # FACE-RECOGNITION-
 ΑΝΑΓΝΩΡΙΣΗ ΠΡΟΣΩΠΟΥ ΜΕ ΑΠΟΜΑΚΡΥΣΜΕΝΟ ΕΛΕΓΧΟ ΚΑΙ ΤΕΧΝΟΛΟΓΙΑ Artificial Intelligence
 
-Σε αυτό το έργο θα χρησιμοποιήσουμε την ESP32 cam  σε συνδυασμό με arduino uno για να προσθέσουμε ασφάλεια στον αυτοματισμό του σπιτιού όπως και διευκόλυνση ελέγχου π.χ. κλείδωμα –ξεκλείδωμα πόρτας ανάλογα το πρόσωπο-face recognition, καταγραφή προσώπων και αποστολή της εικόνας τους διαδικτυακά.
-
-Επίσης σε αυτό το έργο πρόκειται να δημιουργήσουμε μια κάμερα παρακολούθησης  με την  κάμερα ESP32 όπου πρόκειται να φιλοξενήσει έναν διακομιστή διαδικτύου ροής βίντεο στον οποίο μπορείτε να αποκτήσετε πρόσβαση με οποιαδήποτε συσκευή στο δίκτυό σας.
-
-Η  AI-Thinker ESP32-CAM module  που αποτελεί το κύριο μέρος του hardware είναι μια πολύ μικρή μονάδα κάμερας με το τσιπ ESP32-S που κοστίζει μόνο 11 €.
-
+Η  AI-Thinker ESP32-CAM module  που αποτελεί το κύριο μέρος του hardware είναι μια πολύ μικρή μονάδα κάμερας με το τσιπ ESP32-S που κοστίζει μόνο 11 €. Χρησιμοποιήθηκε το ανοικτό λογισμικό arduino ide με τεχνολογία AI σε ένα «πακέτο» που αποτελεί το φθηνότερο στην αγορά για την επίτευξη ανάλογου εγχειρήματος.
 ΥΛΙΚΑ
-
 Για να φτιαχτεί αυτό το έργο χρειάζονται τα ακόλουθα στοιχεία:
+•	ESP32-CAM: https://grobotronics.com/camera-module-based-on-esp32.html = €11.00
+•	Προγραμματιστής FTDI: https://www.hellasdigital.gr/electronics/transceivers-and-communications/ft232rl-ftdi-serials-adapter-module-mini-port-for-arduino-usb-to-ttl-3.3v-5.5v/ = €3,70
+•	Jumper wires: https://www.hellasdigital.gr/electronics/prototyping/cables-pins/40pcs-f-f-dupont-wire-jumper-cables/   =€3.5
+•	breadboard : https://grobotronics.com/breadboard-400-tie-point-white-half-size.html =2Χ€3.20=6.40€
+•	κλειδαριά: https://www.hellasdigital.gr/smartliving/smartlocks/12v-solenoid-lock/ = €7,44
+•	memory card: https://grobotronics.com/microsdhc-16gb-class-10-sandisk-ultra-sdsquar-sdsquar-016g-gn6ma.html  = €6.90
+•	θήκη μπαταριών : https://grobotronics.com/3x18650-wire-leads.html = €1.50
+•	μπαταρίες18650: https://grobotronics.com/battery-lithium-18650-3.6v-2600mah.html = 2Χ€4.80=€9.6
+•	step down dcdc: https://grobotronics.com/dc-dc-step-down-1.3-35v-3a.html = €2.90
+•	ΨΥΚΤΡΑ: https://grobotronics.com/o-220-el.html  = €0.10
+ 
+ 
+ΣΥΝΟΛΟ=52.94€
 
-ESP32-CAM: https://grobotronics.com/camera-module-based-on-esp32.html = €11.00
-  
-Προγραμματιστής FTDI: https://www.hellasdigital.gr/electronics/transceivers-and-communications/ft232rl-ftdi-serials-adapter-module-mini-port-for-arduino-usb-to-ttl-3.3v-5.5v/ = €3,7
+ 
+ΥΛΟΠΟΙΗΣΗ ΜΕ ΧΡΗΣΗ ΤΟΥ ΑΝΟΙΚΤΟΥ ΛΟΓΙΣΜΙΚΟΥ 
 
-Τροφοδοτικό : https://grobotronics.com/power-supply-3v-4.5v-5-6-7.5v-9v-12vdc-600ma-mw3n06ugs-6xc8.html  = €6.80
-
-Arduino uno : https://www.hellasdigital.gr/go-create/arduino/uno-r3-atmega328p-ch340g-mini-usb-board-for-compatible-arduino-diy/ = €6,78 
-
-Jumper wires: https://www.hellasdigital.gr/electronics/prototyping/cables-pins/40pcs-m-m-dupont-wire-jumper-cables-30cm-extra-long/  και: https://www.hellasdigital.gr/electronics/prototyping/cables-pins/40pcs-f-f-dupont-wire-jumper-cables/ = 7,00 €
-
-breadboard : https://grobotronics.com/adafruit-perma-proto-half-sized-breadboard-pcb-single.html και https://grobotronics.com/breadboard-830-tie-point-classic.html =€5.50+€4.20=9.70€
-
-κλειδαριά: https://www.hellasdigital.gr/smartliving/smartlocks/12v-solenoid-lock/ = €7,44 
-
-ΣΥΝΟΛΟ=52,64€
-
+ΠΕΡΙΓΡΑΦΗ ΠΡΟΒΛΗΜΑΤΟΣ
+Η ασφάλεια στον αυτοματισμό σπιτιού-εργασίας  με αναγνώριση προσώπου σε συνδυασμό με Internet Of Things  εφαρμογή για διαδικτυακή  προβολή είναι η πρόκληση που θέλαμε να αντιμετωπίσουμε.
+Περιγραφή προτεινόμενης λύσης
+Σε αυτό το έργο  χρησιμοποιήσαμε την ESP32 cam   για να προσθέσουμε ασφάλεια στον αυτοματισμό του σπιτιού-σχολείου-εργαστηρίου-τάξης όπως και διευκόλυνση ελέγχου π.χ. κλείδωμα –ξεκλείδωμα πόρτας ανάλογα το πρόσωπο-face recognition, καταγραφή προσώπων και αποστολή της εικόνας τους διαδικτυακά.
+Επίσης σε αυτό το έργο  δημιουργήσαμε μια κάμερα παρακολούθησης  με την  κάμερα ESP32 όπου  δημιουργεί έναν διακομιστή διαδικτύου ροής βίντεο στον οποίο μπορείτε να αποκτήσετε πρόσβαση με οποιαδήποτε συσκευή στο δίκτυό σας.
+ΚΟΙΝΩΝΙΚΟΣ ΑΝΤΙΚΤΥΠΟΣ
+Μια από τις αυξανόμενες απαιτήσεις της εποχής μας είναι η ασφάλεια. Πόσο μάλλον όταν μια μαθητική κατασκευή STEM καταφέρνει μέσω Τ.Ν. την αναγνώριση προσώπου με τόσο μικρό κόστος. Ο θετικός αντίκτυπος της κατασκευής μας προκάλεσε την επιθυμία -παραγγελία ανάλογων συσκευών . Είναι ευχάριστο να βλέπουν τα μέλη της ομάδας(μαθητές) μια κατασκευή των 50 ευρώ (προσεγμένη) να πετυχαίνει αποτελέσματα τα  οποία στην τοπική αγορά αδυνατεί προς το παρόν να τα προσφέρει ιδιωτική εταιρεία. Εφαρμογή βρήκε άμεση στην ασφάλεια εργαστηρίου όπως και στις πανελλήνιες εξετάσεις που πραγματοποιούνται στο σχολείο μας(αυτόματο face control).   
+ΠΕΡΙΓΡΑΦΗ ΟΜΑΔΑΣ
+Ο προγραμματιστής και το θετικό μυαλό της ομάδας είναι ο Ζίλ.
+Η Ιωάννα της κατασκευής -συνδεσμολογίας. Είναι μαθητές της Ά λυκείου με μεράκι και αγάπη για το STEM.
