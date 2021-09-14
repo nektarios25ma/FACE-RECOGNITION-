@@ -1,4 +1,4 @@
-//N.K CITIZEN OF THE WORLD
+//N.K. CHANIA CITIZEN OF THE WORLD
 #include "esp_camera.h"
 #include <WiFi.h>
 
