@@ -1,34 +1,77 @@
 # FACE-RECOGNITION-
 ΑΝΑΓΝΩΡΙΣΗ ΠΡΟΣΩΠΟΥ ΜΕ ΑΠΟΜΑΚΡΥΣΜΕΝΟ ΕΛΕΓΧΟ ΚΑΙ ΤΕΧΝΟΛΟΓΙΑ Artificial Intelligence
-1o link video (1η δοκιμή): https://www.youtube.com/watch?v=_v_IU8wW4oc
+ΟΜΑΔΑ:FACE  RECOGNITION
+1o link video (Εξήγηση και 1η  δοκιμή): FACErecognitionVAMOS2021
 
+ΑΝΑΓΝΩΡΙΣΗ ΠΡΟΣΩΠΟΥ ΜΕ ΑΠΟΜΑΚΡΥΣΜΕΝΟ ΕΛΕΓΧΟ ΚΑΙ ΤΕΧΝΟΛΟΓΙΑ Artificial Intelligence
 Η  AI-Thinker ESP32-CAM module  που αποτελεί το κύριο μέρος του hardware είναι μια πολύ μικρή μονάδα κάμερας με το τσιπ ESP32-S που κοστίζει μόνο 11 €. Χρησιμοποιήθηκε το ανοικτό λογισμικό arduino ide με τεχνολογία AI σε ένα «πακέτο» που αποτελεί το φθηνότερο στην αγορά για την επίτευξη ανάλογου εγχειρήματος.
 ΥΛΙΚΑ
 Για να φτιαχτεί αυτό το έργο χρειάζονται τα ακόλουθα στοιχεία:
-•	ESP32-CAM: https://grobotronics.com/camera-module-based-on-esp32.html = €11.00
-•	Προγραμματιστής FTDI: https://www.hellasdigital.gr/electronics/transceivers-and-communications/ft232rl-ftdi-serials-adapter-module-mini-port-for-arduino-usb-to-ttl-3.3v-5.5v/ = €3,70
-•	Jumper wires: https://www.hellasdigital.gr/electronics/prototyping/cables-pins/40pcs-f-f-dupont-wire-jumper-cables/   =€3.5
-•	breadboard : https://grobotronics.com/breadboard-400-tie-point-white-half-size.html =2Χ€3.20=6.40€
-•	κλειδαριά: https://www.hellasdigital.gr/smartliving/smartlocks/12v-solenoid-lock/ = €7,44
-•	memory card: https://grobotronics.com/microsdhc-16gb-class-10-sandisk-ultra-sdsquar-sdsquar-016g-gn6ma.html  = €6.90
-•	θήκη μπαταριών : https://grobotronics.com/3x18650-wire-leads.html = €1.50
-•	μπαταρίες18650: https://grobotronics.com/battery-lithium-18650-3.6v-2600mah.html = 2Χ€4.80=€9.6
-•	step down dcdc: https://grobotronics.com/dc-dc-step-down-1.3-35v-3a.html = €2.90
-•	ΨΥΚΤΡΑ: https://grobotronics.com/o-220-el.html  = €0.10
+ESP32-CAM: https://grobotronics.com/camera-module-based-on-esp32.html = €11.00
+Προγραμματιστής FTDI: https://www.hellasdigital.gr/electronics/transceivers-and-communications/ft232rl-ftdi-serials-adapter-module-mini-port-for-arduino-usb-to-ttl-3.3v-5.5v/ = €3,70 
+Jumper wires: https://www.hellasdigital.gr/electronics/prototyping/cables-pins/40pcs-f-f-dupont-wire-jumper-cables/   =€3.5
+breadboard : https://grobotronics.com/breadboard-400-tie-point-white-half-size.html =2Χ€3.20=6.40€
+κλειδαριά: https://www.hellasdigital.gr/smartliving/smartlocks/12v-solenoid-lock/ = €7,44
+memory card: https://grobotronics.com/microsdhc-16gb-class-10-sandisk-ultra-sdsquar-sdsquar-016g-gn6ma.html  = €6.90
+θήκη μπαταριών : https://grobotronics.com/3x18650-wire-leads.html = €1.50
+μπαταρίες18650: https://grobotronics.com/battery-lithium-18650-3.6v-2600mah.html = 2Χ€4.80=€9.6
+step down dc🡪dc: https://grobotronics.com/dc-dc-step-down-1.3-35v-3a.html = €2.90
+ΨΥΚΤΡΑ: https://grobotronics.com/o-220-el.html  = €0.10
  
  
 ΣΥΝΟΛΟ=52.94€
 
- 
 ΥΛΟΠΟΙΗΣΗ ΜΕ ΧΡΗΣΗ ΤΟΥ ΑΝΟΙΚΤΟΥ ΛΟΓΙΣΜΙΚΟΥ 
-
+ 
+ 
 ΠΕΡΙΓΡΑΦΗ ΠΡΟΒΛΗΜΑΤΟΣ
 Η ασφάλεια στον αυτοματισμό σπιτιού-εργασίας  με αναγνώριση προσώπου σε συνδυασμό με Internet Of Things  εφαρμογή για διαδικτυακή  προβολή είναι η πρόκληση που θέλαμε να αντιμετωπίσουμε.
 Περιγραφή προτεινόμενης λύσης
 Σε αυτό το έργο  χρησιμοποιήσαμε την ESP32 cam   για να προσθέσουμε ασφάλεια στον αυτοματισμό του σπιτιού-σχολείου-εργαστηρίου-τάξης όπως και διευκόλυνση ελέγχου π.χ. κλείδωμα –ξεκλείδωμα πόρτας ανάλογα το πρόσωπο-face recognition, καταγραφή προσώπων και αποστολή της εικόνας τους διαδικτυακά.
 Επίσης σε αυτό το έργο  δημιουργήσαμε μια κάμερα παρακολούθησης  με την  κάμερα ESP32 όπου  δημιουργεί έναν διακομιστή διαδικτύου ροής βίντεο στον οποίο μπορείτε να αποκτήσετε πρόσβαση με οποιαδήποτε συσκευή στο δίκτυό σας.
 ΚΟΙΝΩΝΙΚΟΣ ΑΝΤΙΚΤΥΠΟΣ
-Μια από τις αυξανόμενες απαιτήσεις της εποχής μας είναι η ασφάλεια. Πόσο μάλλον όταν μια μαθητική κατασκευή STEM καταφέρνει μέσω Τ.Ν. την αναγνώριση προσώπου με τόσο μικρό κόστος. Ο θετικός αντίκτυπος της κατασκευής μας προκάλεσε την επιθυμία -παραγγελία ανάλογων συσκευών . Είναι ευχάριστο να βλέπουν τα μέλη της ομάδας(μαθητές) μια κατασκευή των 50 ευρώ (προσεγμένη) να πετυχαίνει αποτελέσματα τα  οποία στην τοπική αγορά αδυνατεί προς το παρόν να τα προσφέρει ιδιωτική εταιρεία. Εφαρμογή βρήκε άμεση στην ασφάλεια εργαστηρίου όπως και στις πανελλήνιες εξετάσεις που πραγματοποιούνται στο σχολείο μας(αυτόματο face control).   
+Μια από τις αυξανόμενες απαιτήσεις της εποχής μας είναι η ασφάλεια. Πόσο μάλλον όταν μια μαθητική κατασκευή STEM καταφέρνει μέσω Τ.Ν. την αναγνώριση προσώπου με τόσο μικρό κόστος. Ο θετικός αντίκτυπος της κατασκευής μας προκάλεσε την επιθυμία -παραγγελία ανάλογων συσκευών . Είναι ευχάριστο να φτιάχνουν τα μέλη της ομάδας(μαθητές) μια κατασκευή των 50 ευρώ (προσεγμένη) να πετυχαίνει αποτελέσματα τα  οποία στην τοπική αγορά αδυνατεί προς το παρόν να τα προσφέρει ιδιωτική εταιρεία. Εφαρμογή βρήκε άμεση στην ασφάλεια εργαστηρίου όπως και στις πανελλήνιες εξετάσεις που πραγματοποιούνται στο σχολείο μας(αυτόματο face control).   
 ΠΕΡΙΓΡΑΦΗ ΟΜΑΔΑΣ
-Ο προγραμματιστής και το θετικό μυαλό της ομάδας είναι ο Ζίλ.
-Η Ιωάννα της κατασκευής -συνδεσμολογίας. Είναι μαθητές της Ά λυκείου με μεράκι και αγάπη για το STEM.
+Ο προγραμματιστής και το θετικό μυαλό της ομάδας είναι ο Ζίλ. Η Ιωάννα της κατασκευής -συνδεσμολογίας. Είναι μαθητές της Ά λυκείου με μεράκι και αγάπη για το STEM.
+ ΚΑΤΑΣΚΕΥΗ
+Α.ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ(upload code)
+1ο βήμα: φτιάχνω το  κύκλωμα https://github.com/nektarios25ma/FACE-RECOGNITION-/blob/main/ESP32%20CAM%20PROGRAMMING%20CIRCUIT.jpg
+
+ Προγραμματισμός της πλακέτας esp32 cam χρησιμοποιώντας FTDI σύμφωνα με το κύκλωμα:
+TIP επιτυχίας στον προγραμματισμό της esp32 cam : η σύνδεση VCC 3.3V μερικές φορές αποτυγχάνει έτσι τότε μεταφέρω το jumper του FTDI απο τα 3.3 στα 5 VOLT και  το κόκκινο καλώδιο στα 5 V της esp32 cam.
+2o βήμα :
+Προσθήκη πλακέτας esp32
+Δείτε τι πρέπει να κάνετε για να εγκαταστήσετε τους πίνακες ESP32 στο Arduino IDE:
+ 
+ Ανοίξτε το Arduino IDE. Βεβαιωθείτε ότι βρίσκεστε στην έκδοση 1.8 ή νεότερη, αν όχι, ενημερώστε το IDE με την πιο πρόσφατη έκδοση.
+ 
+Κάντε κλικ στο μενού Αρχείο στην επάνω γραμμή μενού.
+ 
+Κάντε κλικ στο στοιχείο μενού Προτιμήσεις. Αυτό θα ανοίξει ένα παράθυρο διαλόγου Προτιμήσεις.
+ 
+Αναζητήστε το πλαίσιο κειμένου με την ένδειξη "Επιπλέον URLs διαχειριστή πλακετών".
+Εάν υπάρχει ήδη κείμενο σε αυτό το πλαίσιο, προσθέστε κώμα στο τέλος του και, στη συνέχεια, ακολουθήστε το επόμενο βήμα.
+Επικολλήστε τον παρακάτω σύνδεσμο στο πλαίσιο κειμένου-https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+Κάντε κλικ στο κουμπί OK για να αποθηκεύσετε τη ρύθμιση.
+
+3ο βήμα:
+Ανεβάστε το πρόγραμμα στην πλακέτα: https://github.com/nektarios25ma/FACE-RECOGNITION-:αφού κατεβάσετε όλο το φάκελο CameraFaceRecognitionDoorLock2 απο τον παραπάνω σύνδεσμο και ανοίξετε το CameraFaceRecognitionDoorLock2.ino.
+ΔΙΑΒΑΣΤΕ ΤO ΣΧΟΛΙO ΣΤHN ΠΡΩΤH ΓΡΑΜΜH.
+Μόλις ανέβει το πρόγραμμα ανοίγουμε το serial monitor και αντιγράφουμε την διεύθυνση http την οποία επικολλούμε στον browser του ταμπλετ ή smartphone . Την ανοίγω* όταν έχω ολοκληρώσει την παρακάτω κατασκευή και ανοίξω την τροφοδοσία.
+ 
+Υ.Γ. Απο τα εργαλεία στο arduino ide διαλέξτε πλακέτα :AI Thinker ESP32-CAM
+ 
+Β. Τελική κατασκευή:
+Φτιάχνω το παρακάτω κύκλωμα
+https://github.com/nektarios25ma/FACE-RECOGNITION-/blob/main/CIRCUITconnections.png
+ 
+Στην θέση του 7805 voltage regulator μπορούμε να βάλουμε εναλλακτικά step down voltage.
+Μόλις ενεργοποιήσω την συσκευή ανοίγω την http διεύθυνση που αναφέρω παραπάνω* και "πατάω " start stream και face recognition από όπου με το enroll face διαλέγω τα πρόσωπα -ποζάρουν στην κάμερα-που επιτρέπω να εισέλθουν στον χώρο. 
+Τέλος …όχι θα λέγαμε.
+
+Τα επόμενα βήματα είναι 3d εξαρτήματα για να φιλοξενήσουν την esp32 cam (θα τα βρείτε στο Git Hub)
+ 
+ 
+ 
+ 
+
