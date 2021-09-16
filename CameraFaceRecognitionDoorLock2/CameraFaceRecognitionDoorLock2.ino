@@ -1,4 +1,4 @@
-//Ν.Κ.
+//ΠΡΟΣΟΧΗ ΣΤΗΝ 22-23 ΓΡΑΜΜΗ ΒΑΛΤΕ ΤΟ ΔΙΚΟ ΣΑΣ ssid και password του δικτύου σας(με WIFI)
 //ESP Camera Artificial Intelligence Face Detection Automatic Door Lock
 #include "esp_camera.h"
 #include <WiFi.h>
