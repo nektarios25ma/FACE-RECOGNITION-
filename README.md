@@ -2,6 +2,7 @@
 ΑΝΑΓΝΩΡΙΣΗ ΠΡΟΣΩΠΟΥ ΜΕ ΑΠΟΜΑΚΡΥΣΜΕΝΟ ΕΛΕΓΧΟ ΚΑΙ ΤΕΧΝΟΛΟΓΙΑ Artificial Intelligence
 ΟΜΑΔΑ:FACE  RECOGNITION
 1o link video (Εξήγηση και 1η  δοκιμή): FACErecognitionVAMOS2021
+https://www.youtube.com/watch?v=_v_IU8wW4oc
 
 ΑΝΑΓΝΩΡΙΣΗ ΠΡΟΣΩΠΟΥ ΜΕ ΑΠΟΜΑΚΡΥΣΜΕΝΟ ΕΛΕΓΧΟ ΚΑΙ ΤΕΧΝΟΛΟΓΙΑ Artificial Intelligence
 Η  AI-Thinker ESP32-CAM module  που αποτελεί το κύριο μέρος του hardware είναι μια πολύ μικρή μονάδα κάμερας με το τσιπ ESP32-S που κοστίζει μόνο 11 €. Χρησιμοποιήθηκε το ανοικτό λογισμικό arduino ide με τεχνολογία AI σε ένα «πακέτο» που αποτελεί το φθηνότερο στην αγορά για την επίτευξη ανάλογου εγχειρήματος.
